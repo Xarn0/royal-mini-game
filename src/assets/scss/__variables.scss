@@ -1,0 +1,31 @@
+$height : 100vh;
+
+
+@mixin element{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    background: #34113B;
+    padding: 10px 20px;
+    border-bottom: 2px inset #FFB800;
+    border-top: 2px solid #34113B ;
+    box-shadow: -1px 8px 8px 0px #220240 inset;
+    position: relative;
+}
+@mixin elementAfter($url){
+    content: url($url);
+    position: absolute;
+    top:-5px;
+    left: -4px;
+    width: 49px;
+    height: 49px;
+}
+
+@mixin colorGold{
+            background: linear-gradient(to bottom, #EBFF00, #FFA800);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: 20px;
+            filter:drop-shadow(0px 3px 8px  #EBFF00) ;
+            -webkit-filter:drop-shadow(0px 3px 8px  #EBFF00) ;
+}
