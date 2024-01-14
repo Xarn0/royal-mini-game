@@ -1,8 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
-})
-module.exports = {
+  publicPath:`/royal-mini-game/`,
+  transpileDependencies: true,
   css: {
     loaderOptions: {
       scss: {
@@ -10,4 +9,4 @@ module.exports = {
       },
     }
   }
-}
+})
